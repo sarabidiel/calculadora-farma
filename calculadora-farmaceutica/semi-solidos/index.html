@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Fórmulas Semissólidas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Calculadora de Fórmulas Semi-sólidas</h1>
+  
+  <div class="calculator">
+    <label for="quantidadeInput">Quantidade Total de Produto (ml):</label>
+    <input type="number" id="quantidadeInput">
+    
+    <div id="ativosContainer">
+      <div class="ativo">
+        <label for="dosagemInput">Dosagem do Ativo (%):</label>
+        <input type="number" step="0.01" class="dosagemInput">
+      </div>
+    </div>
+
+    <button onclick="adicionarCampoDosagem()">Adicionar Campo de Dosagem</button>
+
+    <button onclick="calcular()">Calcular</button>
+    
+    <div id="resultadosContainer"></div>
+    <p id="resultadoVeiculo"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

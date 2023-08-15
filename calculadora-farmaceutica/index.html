@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<header>
+  CALCULADORA FARMACÊUTICA 
+</header>
+<body>
+   <main>
+     <div class="tab">
+      <button id="tabpadrao" class="tab-button" onclick="abrirtab(event, 'capsulas')">CAPSULAS</button>
+      <button class="tab-button" onclick="abrirtab(event,'gotas')">GOTAS</button>
+      <button class="tab-button" onclick="abrirtab(event,'semisolidos')">SEMI-SÓLIDOS</button>
+      <bUtton class="tab-button" onclick="abrirtab(event,'calculadora')">CALCULADORA BÁSICA</bUtton>
+     </div>
+     
+       <div id="capsulas" class="conteudo">
+      <iframe src="capsulas/index.html" frameborder="0" width="90%" height="350px"></iframe>
+       </div>
+     
+       <div id="gotas" class="conteudo">
+      <iframe src="gotas/index.html" frameborder="0" width="90%" height="350px"></iframe>
+       </div>
+     
+       <div id="semisolidos" class="conteudo">
+      <iframe src="semi-solidos/index.html" frameborder="0" width="90%" height="350px"></iframe>
+       </div>
+     
+       <div id="calculadora" class="conteudo">
+      <iframe src="cauculadora cientifica/index.html" frameborder="0" width="90%" height="350px"
+      ></iframe>
+       </div>
+
+       
+   </main>
+
+   <footer>SITE CRIADO POR <a href="#">JOÃO PEDRO</a> PARA À MATÉRIA FARMACOTÉCNICA.</footer>
+ <script src="script.js"></script>
+</body>
+</html>

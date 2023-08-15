@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Gotas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Calculadora de Gotas</h1>
+  
+  <div class="calculator">
+    <label for="volumeInput">Volume Total do Produto (ml):</label>
+    <input type="number" id="volumeInput">
+    
+    <label for="dosagemInput">Dosagem do Ativo:</label>
+    <input type="number" step="0.01" id="dosagemInput">
+
+    <select id="unidadeSelect">
+      <option value="mg">mg</option>
+      <option value="mcg">mcg</option>
+      <option value="%">%</option>
+    </select>
+
+    <label for="fatorInput">Fator de Correção:</label>
+    <input type="number" step="0.01" id="fatorInput">
+    
+    <button onclick="calcular()">Calcular</button>
+    
+    <div id="resultadoContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
